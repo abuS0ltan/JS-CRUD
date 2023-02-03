@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/sweetalert/sweetalert2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="course-panal w-50 mx-auto">
+        <div class="container text-center my-5">
+            <h1 class="titel mb-5">Course Control Panal</h1>
+            <div class="panal  text-start mt-5 pt-5">
+                <div class="mb-3">
+                    <label for="courseName" class="form-label">Course Name</label>
+                    <input type="text" class="form-control" id="courseName" placeholder="Html" >
+                    <div class="alert alert-danger d-none mt-2" role="alert" id="courseNameAlert">
+                        <p>Course name must be between 2 and 10 letters and start with a capital letter.</p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="courseCategory" class="form-label">Course Category</label>
+                    <input type="text" class="form-control" id="courseCategory" placeholder="Front end">
+                    <div class="alert alert-danger d-none mt-2" role="alert" id="courseCategoryAlert">
+                        <p>Course category must be between 2 and 20 letters and start with a capital letter.</p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="coursePrice" class="form-label">Course Price</label>
+                    <input type="number" class="form-control" id="coursePrice" placeholder="50">
+                    <div class="alert alert-danger d-none mt-2" role="alert" id="coursePriceAlert">
+                        <p>Course price must be between 1$ and 10000$.</p>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="courseDescription" class="form-label">Course Description</label>
+                    <textarea class="form-control" id="courseDescription" rows="2"></textarea>
+                </div>
+                <div class="bootom-div">
+                    <button href="" class="btn btn-outline-primary" id="addbtn" disabled>Add Course</button>
+                    <button href="" class="btn btn-outline-success" id="clearBtn">Clear</button>
+                    <button href="" class="btn btn-outline-danger" id="deleteAllBtn" >Delete All</button>
+                </div>
+                <div class="search-div">
+                    <input type="search" placeholder="Search by course name..." class="form-control my-2" id="searchArea" >
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="Table w-50 mx-auto">
+        <table class="table mx-auto text-start mt-5 pt-5">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Achion</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+              
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/sweetalert/sweetalert2.all.js"></script>
+    <script src="assets/bootstrap/bootstrap.css"></script>
+</body>
+</html>
